@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TaarufApp</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_category">Kategori</string>
+    <string name="title_love">Match</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profil</string>
+</resources>
