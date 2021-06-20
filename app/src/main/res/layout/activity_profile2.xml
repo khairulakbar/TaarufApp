@@ -47,7 +47,10 @@
                 android:layout_height="35dp"
                 android:background="@drawable/edittext_border"
                 android:ems="10"
-                android:inputType="date"
+                android:hint="Pilih Lokasi"
+                android:inputType="text"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +117,7 @@
                 tools:ignore="MissingConstraints" />
 
             <EditText
+                android:id="@+id/editText3"
                 android:layout_width="280dp"
                 android:layout_height="35dp"
                 android:background="@drawable/edittext_border"
@@ -131,6 +135,25 @@
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="MissingConstraints" />
 
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="281dp"
+                android:layout_height="70dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Informasi tambahan..."
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView25"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -153,7 +176,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="64dp"
-                android:text="Tanggal Lahir"
+                android:text="Lokasi"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Tinggi Badan (CM)"
+                android:text="Pendidikan"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -179,7 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Berat Badan (Kg)"
+                android:text="Pekerjaan"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -195,7 +218,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Warna Kulit"
+                android:text="Sholat 5 Waktu"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -208,7 +231,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Suku"
+                android:text="Hobi"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -216,7 +239,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText2"
                 tools:ignore="MissingConstraints" />
 
-
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Informasi Tambahan (Opsional)"
+                android:textColor="@color/select"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText3"
+                app:layout_constraintVertical_bias="0.013"
+                tools:ignore="MissingConstraints" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

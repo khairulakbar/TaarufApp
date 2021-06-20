@@ -40,4 +40,7 @@ dependencies {
     //circle & Rounded image
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
 }

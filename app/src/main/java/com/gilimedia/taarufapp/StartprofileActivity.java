@@ -3,30 +3,31 @@ package com.gilimedia.taarufapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SigninActivity extends AppCompatActivity {
+public class StartprofileActivity extends AppCompatActivity {
 
-    Button btnSignin;
+    TextView lanjut;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin);
+        setContentView(R.layout.start_profile);
 
-        btnSignin = (Button)findViewById(R.id.btnSignin);
+        lanjut = (TextView) findViewById(R.id.txNext);
 
-        btnSignin.setOnClickListener(new View.OnClickListener() {
+        lanjut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SigninActivity.this,StartprofileActivity.class);
+
+                Intent intent = new Intent(StartprofileActivity.this, ProfileOneActivity.class);
                 startActivity(intent);
+
             }
         });
-
 
     }
 }

@@ -48,6 +48,46 @@
             android:name=".VerificationActivity"
             android:label="Verifikasi"
             android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".StartprofileActivity"
+            android:label="Start Profil"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".ProfileOneActivity"
+            android:label="Start Profil1"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".ProfileTwoActivity"
+            android:label="Start Profil2"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".StartkriteriaActivity"
+            android:label="Start Kriteria"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".KriteriaoneActivity"
+            android:label="Start Kriteria1"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".KriteriatwoActivity"
+            android:label="Start Kriteria2"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".FoundActivity"
+            android:label="Found"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
+
+        <activity
+            android:name=".NotfoundActivity"
+            android:label="Not Found"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
     </application>
 
 </manifest>

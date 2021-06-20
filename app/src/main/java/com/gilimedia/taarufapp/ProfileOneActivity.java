@@ -8,25 +8,26 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SigninActivity extends AppCompatActivity {
+public class ProfileOneActivity extends AppCompatActivity {
 
-    Button btnSignin;
+    Button lanjut;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signin);
+        setContentView(R.layout.activity_profile1);
 
-        btnSignin = (Button)findViewById(R.id.btnSignin);
+        lanjut = (Button) findViewById(R.id.btNext);
 
-        btnSignin.setOnClickListener(new View.OnClickListener() {
+        lanjut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SigninActivity.this,StartprofileActivity.class);
+
+                Intent intent = new Intent(ProfileOneActivity.this, ProfileTwoActivity.class);
                 startActivity(intent);
+
             }
         });
-
 
     }
 }

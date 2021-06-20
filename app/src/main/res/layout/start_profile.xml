@@ -22,6 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_circle"
+                android:src="@drawable/addprofile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.191" />
+
             <Button
                 android:id="@+id/btnSubmitVerify"
                 android:layout_width="match_parent"
@@ -39,14 +50,13 @@
 
             <TextView
                 android:id="@+id/textView19"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:text="Kami akan mencarikan teman berkenalan yang sesuai berdasarkan profil kamu!"
                 android:textAlignment="center"
-                android:textColor="@color/bg"
+                android:textColor="@color/abu"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13"
                 app:layout_constraintVertical_bias="0.0"
@@ -69,13 +79,14 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-
+                android:id="@+id/txNext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:text="Lanjutkan"
                 android:textAllCaps="false"
                 android:textColor="@color/select"
+                android:textSize="18dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"

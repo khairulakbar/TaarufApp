@@ -56,12 +56,11 @@
                 tools:ignore="MissingConstraints" />
 
             <EditText
-                android:id="@+id/etEmail"
-                android:layout_width="280dp"
+                android:id="@+id/etUsia"
+                android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:background="@drawable/edittext_border"
                 android:ems="10"
-                android:hint="Tinggi Badan"
                 android:inputType="number"
                 android:paddingLeft="15dp"
                 android:textColor="@color/black"
@@ -69,9 +68,29 @@
                 android:textSize="14dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.191"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView21"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_bias="0.033"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/etUsia2"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.601"
+                app:layout_constraintStart_toEndOf="@+id/etUsia"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                app:layout_constraintVertical_bias="0.033"
                 tools:ignore="MissingConstraints" />
 
             <EditText
@@ -81,7 +100,7 @@
                 android:layout_height="35dp"
                 android:background="@drawable/edittext_border"
                 android:ems="10"
-                android:hint="Berat Badan"
+                android:hint="Tinggi Badan"
                 android:inputType="number"
                 android:paddingLeft="15dp"
                 android:textColor="@color/black"
@@ -100,7 +119,7 @@
                 android:layout_height="35dp"
                 android:background="@drawable/edittext_border"
                 android:ems="10"
-                android:hint="Warna Kulit"
+                android:hint="Berat Badan"
                 android:inputType="number"
                 android:paddingLeft="15dp"
                 android:textColor="@color/black"
@@ -112,6 +131,26 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView23"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+                android:hint="Warna Kulit"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView24"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
 
             <EditText
                 android:layout_width="280dp"
@@ -127,25 +166,25 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="MissingConstraints" />
-
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lengkapi Profil Anda"
+                android:text="Kriteria Pasangan"
                 android:textAllCaps="false"
                 android:textColor="@color/select"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.027"
+                app:layout_constraintVertical_bias="0.023"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -153,7 +192,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="64dp"
-                android:text="Tanggal Lahir"
+                android:text="Status Pernikahan"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +205,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Tinggi Badan (CM)"
+                android:text="Usia"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -175,18 +214,31 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="s/d"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
                 android:id="@+id/textView22"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Berat Badan (Kg)"
+                android:text="Tinggi Badan (Cm)"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etEmail"
+                app:layout_constraintTop_toBottomOf="@+id/etUsia"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="MissingConstraints" />
 
@@ -195,7 +247,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Warna Kulit"
+                android:text="Berat Badan (Kg)"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -208,7 +260,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Suku"
+                android:text="Warna Kulit"
                 android:textColor="@color/select"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -216,7 +268,18 @@
                 app:layout_constraintTop_toBottomOf="@+id/editText2"
                 tools:ignore="MissingConstraints" />
 
-
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Suku"
+                android:textColor="@color/select"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                tools:ignore="MissingConstraints" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
