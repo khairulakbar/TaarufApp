@@ -7,6 +7,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bg">
 
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="@color/select"
+        android:text="SUBMIT"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.032"
+        tools:ignore="MissingConstraints" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="600dp"
@@ -22,6 +40,210 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <Button
+                android:id="@+id/btnVerifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/circle_button"
+                android:backgroundTint="@color/select"
+                android:padding="15dp"
+                android:text="Verifikasi Identitas"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.032"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_button"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13"
+                app:layout_constraintVertical_bias="0.103"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_button"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:hint="Password"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmail"
+                app:layout_constraintVertical_bias="0.02"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_button"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp"
+                android:hint="Nama Lengkap"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPhone"
+                app:layout_constraintVertical_bias="0.023"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_button"
+                android:ems="10"
+                android:hint="Nomor Telpon"
+                android:paddingLeft="15dp"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPassword"
+                app:layout_constraintVertical_bias="0.02"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/etKTP"
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:background="@drawable/circle_button"
+                android:ems="10"
+                android:hint="No Identitas / KTP"
+                android:paddingLeft="15dp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/bg"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etName"
+                app:layout_constraintVertical_bias="0.026"
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView13"
+                app:layout_constraintHorizontal_bias="0.121"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="112dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:srcCompat="@drawable/ic_baseline_check_24"
+                tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+            <RadioGroup
+                android:id="@+id/jKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+
+                    android:text="Laki-laki"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Perempuan"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/statusnikah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/textView17"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+
+                    android:text="Single"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:text="Duda/Janda"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+            </RadioGroup>
+
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
@@ -35,119 +257,49 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.052"
+                app:layout_constraintVertical_bias="0.027"
                 tools:ignore="MissingConstraints" />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="280dp"
-                android:layout_height="35dp"
-                android:background="@drawable/circle_button"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Username"
-                android:paddingLeft="15dp"
-                android:textColor="@color/bg"
-                android:textSize="14dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="51dp"
-                tools:layout_editor_absoluteY="106dp" />
-
-            <EditText
-                android:layout_width="280dp"
-                android:layout_height="35dp"
-                android:background="@drawable/circle_button"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:text="Password"
-                android:textColor="@color/bg"
-                android:textSize="14dp"
-                android:paddingLeft="15dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="51dp"
-                tools:layout_editor_absoluteY="164dp" />
-
-            <EditText
-                android:layout_width="280dp"
-                android:layout_height="35dp"
-                android:background="@drawable/circle_button"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:paddingLeft="15dp"
-                android:text="Nama Lengkap"
-                android:textColor="@color/bg"
-                android:textSize="14dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="51dp"
-                tools:layout_editor_absoluteY="218dp" />
-
-            <EditText
-                android:layout_width="280dp"
-                android:layout_height="35dp"
-                android:background="@drawable/circle_button"
-                android:ems="10"
-                android:inputType="textPhonetic"
-                android:paddingLeft="15dp"
-                android:text="Nomor Telpon"
-                android:textColor="@color/bg"
-                android:textSize="14dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="51dp"
-                tools:layout_editor_absoluteY="218dp" />
-
-            <EditText
-                android:layout_width="280dp"
-                android:layout_height="35dp"
-                android:background="@drawable/circle_button"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:paddingLeft="15dp"
-                android:text="No Identitas / KTP"
-                android:textColor="@color/bg"
-                android:textSize="14dp"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="51dp"
-                tools:layout_editor_absoluteY="283dp" />
-
-            <RadioButton
-                android:id="@+id/radioButton"
+            <TextView
+                android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Laki-laki"
+                android:text="Jenis Kelamin :"
                 android:textColor="@color/black"
-                tools:layout_editor_absoluteX="60dp"
-                tools:layout_editor_absoluteY="357dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etKTP"
+                app:layout_constraintVertical_bias="0.108"
                 tools:ignore="MissingConstraints" />
 
-            <RadioButton
-                android:id="@+id/radioButton2"
+            <TextView
+                android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Perempuan"
+                android:text="Status Pernikahan :"
                 android:textColor="@color/black"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="226dp"
-                tools:layout_editor_absoluteY="357dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.183"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jKelamin"
+                app:layout_constraintVertical_bias="0.047"
+                tools:ignore="MissingConstraints" />
 
-            <RadioButton
-                android:id="@+id/radioButton3"
+            <TextView
+                android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Single"
+                android:layout_marginStart="48dp"
+                android:text="Verifikasi Status :"
                 android:textColor="@color/black"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="60dp"
-                tools:layout_editor_absoluteY="408dp" />
-
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Duda/Janda"
-                android:textColor="@color/black"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="226dp"
-                tools:layout_editor_absoluteY="408dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.808"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

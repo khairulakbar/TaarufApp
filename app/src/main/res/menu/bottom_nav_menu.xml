@@ -34,7 +34,7 @@
 
     <item
         android:id="@+id/navigation_notif"
-        android:icon="@drawable/chat"
+        android:icon="@drawable/chat_buble"
         android:title="@string/title_chat" />
 
     <item
